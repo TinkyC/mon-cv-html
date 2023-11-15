@@ -1,7 +1,11 @@
 body {
-  padding: 20px;
-  margin: 20px;
   font-family: "Oswald", sans-serif;
+    width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000000;
+    border-radius: 1rem;
+    
 }
 
 h1,
@@ -11,68 +15,202 @@ h3 {
 }
 .Titre {
   background-color: #e9ebff;
+  margin: 0%;
+  padding: 0%;
+  border-bottom:2px solid #000000;
+  border-radius: 0.7rem;
 }
 
 header {
   font-family: "Bebas Neue", sans-serif;
   border-bottom: 2px solid black;
   font-size: large;
-}
-
-.section-toolbar {
-  border-bottom: 2px solid black;
-  background-color: #e9ebff;
-  border-radius: 10px;
-}
-
-.box {
-  background-color: #ffffff; /* Couleur de fond */
+  background-color: #ffffff; 
   border-radius: 10px;
   border: 2px solid #000000;
-  margin: 15px;
+  margin: 30px;
   padding: 15px;
   display: flex;
-  gap: 10rem;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.entete-1 {
-  height: 11rem;
-  width: 11rem;
+.Logo-Linkedin,.Reseaux-sociaux,.instagram,.Nom-Linkedin{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
 }
-.Info-decal-droite {
-  height: 10rem;
-  width: 15rem;
+
+
+.m-class1,.m-class2,.m-class3 {
+  display:flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 30px;
 }
-.Bloc-entete {
-  height: 20rem;
+
+
+.Formation {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 2px solid #000000;
+  margin: 15px;
+  padding: 0px;
+  height: auto;
+  width: 35%;
+}
+
+.A-propos {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 1rem;
+  margin: 15px;
+  width: 30%;
+  padding: 10px;
+  height: 45%;
+  width: 35%;
+  text-align: center;
+}
+
+.deco2 {
+  background-color: #e9ebff;
+  width: 20rem;
+  height: 50rem;
+  position: absolute;
+  top: 175px;
+  left: 55rem;
+  z-index: -2;
+  transform: translate(15px);
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.deco3 {
+  background-color: #e9ebff;
   width: 30rem;
+  height: 60rem;
+  position: absolute;
+  top: 600px;
+  left: 300px;
+  z-index: -2;
+  transform: translate(15px);
+  border: 1px solid black;
+  border-radius: 1rem;
 }
+.deco1 {
+  background-color: #8e95e3;
+  width: 30rem;
+  height: 50rem;
+  position: absolute;
+  top: 300px;
+  right: 550px;
+  z-index: -1;
+  transform: translate(15px);
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.Informatique {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 15px;
+  padding: 0px;
+  height: 30em;
+  width: 35%;
 
-.Logo-Linkedin {
-  background-color: aquamarine;
+  box-shadow: 10px 10px 0px #5b67ed;
+  /* box shadow pour faire une "ombre" plus simple que de refaire un cadre*/
+}
+.space {
+  padding: 10px;
+  margin: 3px;
+}
+.hardskills {
   display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-  align-items: center;
+text-align: left;
+flex-direction: column;
 }
 
-.Nom-Linkedin {
-  margin-right: 60px;
-  font-size: x-large;
+.Experiences {
+  background-color:white;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 15px;
+  padding: 0px;
+  height: auto;
+  width: 35%;
 }
 
-.Logo-Youtube {
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-  align-items: center;
+.Portefolio {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 15px;
+  padding: 10px;
+  height: auto;
+  width: 15%;
+  box-shadow: -10px -10px 0px #5b67ed;
+}
+
+.centre-interet {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 15px;
+  padding: 10px;
+  height: auto;
+  width: 20%;
+  box-shadow: -10px 10px 0px #5b67ed;
+}
+
+.toolbar {
+  border-bottom: 1px solid black;
+  background-color: #e9ebff;
+  height: 1rem;
+  border-radius: 1rem;
+  margin: 0px;
+  padding: 5%;
 }
 
 section > ul {
   list-style-type: none;
 }
 
-.Formation {
-  background-color: purple;
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .Titre {
+    margin: 0;
+  }
+  header {
+    margin: 10px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .bloc-gauche {
+    align-items: center;
+  }
+  .m-class1, .m-class2, .m-class3 {
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px;
+  }
+  .Formation, .A-propos, .Informatique, .Experiences, .Portefolio, .centre-interet {
+    width: 100%;
+  }
+
+  .deco1, .deco2, .deco3 {
+    width: 100%;
+  }
+
+  .hardskills {
+    text-align: center;
+  }
+
+  .toolbar {
+    padding: 2%;
+  }
 }
